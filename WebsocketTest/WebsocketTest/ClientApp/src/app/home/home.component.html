@@ -1,10 +1,10 @@
 <h1>Hello, world!</h1>
-
-<input type="text" [(ngModel)]="user">
-<textarea [(ngModel)]="message"></textarea>
-<button (click)="sendMessage()">Send Message</button>
+<div class="row">
+  <input class="col-12" type="text" [(ngModel)]="user">
+  <textarea class="col-12" [(ngModel)]="message"></textarea>
+  <button class="col-12 btn btn-primary" (click)="sendMessage()">Send Message</button>
+</div>
 
 <ul>
   <li *ngFor="let message of messages">{{message}}</li>
 </ul>
-<p>The <code>ClientApp</code> subdirectory is a standard Angular CLI application. If you open a command prompt in that directory, you can run any <code>ng</code> command (e.g., <code>ng test</code>), or use <code>npm</code> to install extra packages into it.</p>
